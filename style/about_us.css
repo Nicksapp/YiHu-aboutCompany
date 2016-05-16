@@ -1,0 +1,118 @@
+a{
+	text-decoration: none;
+}
+
+.my-main-container{
+	overflow: hidden;
+}
+
+.left-nav-container{
+	display: inline-block;
+	width: 240px;
+	height: 264px;
+	background-color: #fafafa;
+	margin-top: 110px;
+	margin-left: 130px;
+	float: left;
+}
+
+.left-nav-container .left-text li{
+	display: block;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	font-family: '微软雅黑 light';
+	line-height: 36px;
+	border-bottom: 1px solid #f1f1f1;
+}
+.left-nav-container .left-text li:hover{
+	width: 236px; 
+	border-right: 4px solid #7aa6d4;
+	background-color: #eee;
+	cursor: pointer;
+}
+.left-nav-container .left-text a{
+	color: #949494;
+}
+.left-nav-container .left-text a:hover{
+	color: #4fabff;
+}
+.left-nav-container .left-text .left-active{
+	background-color: #eee;
+	width: 236px; 
+	border-right: 4px solid #7aa6d4;
+}
+
+.about-us-container{
+	position: absolute;
+	float: left;
+	width: 1200px;
+	height: auto;
+	margin-left: 20px;
+	margin-top: 110px;
+	display: inline-block;
+	background-color: #fafafa;
+}
+.about-us-container .about-us-head{
+	font-family: '微软雅黑 light';
+	font-size: 20px;
+	color: #4fabff;
+	padding-left: 20px;
+	padding-top: 16px;
+}
+.about-us-container .about-us-head hr{
+	color: #86c6ff;
+	background-color: #86c6ff;
+	height: 2px;
+	width: 1160px;
+	margin-top: 12px;
+	border: none;
+}
+.about-us-container .about-us-body{
+	padding-left: 28px;
+	padding-top: 34px;
+}
+.about-us-container .about-us-body h1{
+	font-size: 22px;
+	font-family: '微软雅黑 regular';
+	color: #000;
+	
+}
+.about-us-container .about-us-body p{
+	font-size: 16px;
+	font-family: '微软雅黑 light';
+	color: #000;
+	line-height: 36px;
+}
+.about-us-container .about-us-body .bottom-text{
+	margin-top: 50px;
+	width: 30%;
+	float: left;
+}
+.about-us-container .about-us-body .bottom-img{
+	width: 13%;
+	margin-top: 15px;
+}
+
+.circle{
+	width: 10px;
+	height: 10px;
+	background-color: #ff9140;
+	border-radius: 5px;
+	position: absolute;
+	left: 8px;
+	margin-top: 14px;
+}
+
+.about-us-container .about-us-body h2{
+	margin-top: 15px;
+	font-size: 18px;
+}
+.about-us-container .about-us-body p{
+	width: 1000px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

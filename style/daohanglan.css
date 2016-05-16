@@ -1,0 +1,324 @@
+*{
+	 margin: 0;
+	 padding: 0;
+}
+body{
+	font-family:"Microsoft YaHei",寰蒋闆呴粦,"MicrosoftJhengHei",鍗庢枃缁嗛粦,STHeiti,MingLiu ;
+}
+ul{
+	list-style: none;
+}
+img{ border:none; }
+.topMenu{
+	position: fixed;
+	width: 100%;
+	min-width: 1200px;
+	height: 70px;
+	background-color: #5677C4;
+	top:0;
+	left:0;
+	z-index: 9999;
+}
+/**************************浠ヤ笅鏍囧織***************************/
+.topMenu>span{
+	position: absolute;
+	top: 16px;
+	left: 78px;
+	color: white;
+	font-size: 32px;
+	font-weight: bold;
+}
+/**************************浠ヤ笅瀵艰埅鏍�***************************/
+.topMenu>ul{
+	position: absolute;
+	left: 300px;
+	/*overflow: hidden;*/
+}
+.topMenu>ul>li{
+	float: left;
+	margin-right: 20px;
+}
+.topMenu>ul>li>a {
+	display: block;
+	line-height: 64px;
+	width: 84px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+.topMenu>ul>li>a:hover,.topMenu>ul>li>a.selected{
+	background-color: #7490CD;
+	border-bottom: white 4px solid;
+}
+/**************************浠ヤ笅鍙抽儴鏍�***************************/
+.topMenu_right{
+	position: absolute;
+	right: 7.6%;
+	height: 100%;
+}
+.topMenu_right>ul{
+	/*overflow: hidden;*/
+}
+.topMenu_right>ul>li{
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+.topMenu_right>ul>li>a{
+	display: block;
+	width: 40px;
+	height: 70px;
+}
+.topMenu_right>ul>li>.xiaoxi{
+	/*background: url("../img/note.gif") no-repeat 26px 23px;*/
+}
+.topMenu_right>ul>li>.person{
+	width: 50px;
+}
+.topMenu_right>ul>li:hover,.topMenu_right>ul>li.selected{
+	background-color: #7490CD;
+}                 
+.topMenu_right>ul img{
+	position: absolute;
+	top: 40%;
+	left: 24%;
+}
+ .topMenu_right>ul>li .person img{
+	top: 28%;
+	left: 10%;
+	border-radius:50% ;
+}
+/**************************浠ヤ笅闅愯棌鎼滅储妗�***************************/
+.hiddenSearch{
+	display: none;
+	z-index: 99;
+	position: fixed;
+	top: 70px;
+	left: 50%;
+	background-color: #7490CD;
+	width: 330px;
+	height: 50px;
+	font-size: 16px;
+	margin-left:269px;
+}
+.hiddenSearch a{
+	position: absolute;
+	left: 10px;
+	top: 2px;
+	display: block;
+	line-height: 48px;
+	text-indent: .2em;
+	width: 56px;
+	float: left;
+	color: #fff;
+	text-decoration: none;
+}
+.hiddenSearch .hiddenSearch_shangjiaoxing{
+	position: absolute;
+	left: 39px;
+	top: 20px;
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5px ;
+	border-color: #fff transparent transparent transparent;
+}
+#searchText {
+	position: absolute;
+	left: 56px;
+	top: 12px;
+	margin-left: 10px;
+	width: 210px;
+	height: 20.5px;
+	padding: 3px 2px;
+	border: white solid 1px;
+}
+.hiddenSearch img{
+	position: absolute;
+	top: 12px;
+	left: 280px;
+	height: 26.5px;
+	border: 1px solid white;
+}
+.hiddenSearch_list{
+	position: absolute;
+	top: 48px;
+	left: -10px;
+	background-color: #7490CD;
+	display: none;
+}
+.hiddenSearch_list li{
+	text-align: center;
+	line-height: 26px;
+	width: 67px;
+}
+.hiddenSearch_list li{
+	border-bottom: #fff solid 1px;
+}
+.hiddenSearch_list li:hover{
+	background-color: #506CAD;
+}
+/**************************浠ヤ笅闅愯棌瀵艰埅鐭ラ亾鏍忥紝鐧剧鏍�***************************/
+.hiddenZhidao,.hiddenBaike{
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	display: none;
+	z-index: 99;
+	background-color: #fff;
+}
+.hiddenSchool
+{
+	width:100%;
+	position: absolute;
+	left: 0px;
+	top: 70px;
+	display: none;
+	z-index: 99;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 2px 8px #8c8c8c;
+    box-shadow: 0px 2px 8px #8c8c8c;
+}
+.hiddenSchool ul
+{
+	padding-left: 24px;
+	padding-top: 10px;
+	width: 270px;
+	height: 130px;
+	border: #5677C4 solid 1px;
+	border-top: none;
+	overflow: hidden;
+	box-shadow:1px 1px 2px #7E95CE;
+}
+.hiddenZhidao ul,.hiddenBaike ul{
+	padding-left: 24px;
+	padding-top: 10px;
+	width: 270px;
+	height: 130px;
+	border: #5677C4 solid 1px;
+	border-top: none;
+	overflow: hidden;
+	box-shadow:1px 1px 2px #7E95CE;
+}
+.hiddenBaike ul{
+	height: 70px;
+}
+.hiddenZhidao ul li,.hiddenBaike ul li,.hiddenSchool ul li{
+	float: left;
+	width: 90px;
+}
+.hiddenZhidao a,.hiddenBaike a{
+	line-height: 30px;
+	color: #404346;
+	font-size: 16px;
+	text-decoration: none;
+}
+.hiddenZhidao a:hover,.hiddenBaike a:hover{
+	color: #1C50C9;
+}	
+.topMenu_left_zhidao,.topMenu_left_baike,.schoolwrap{
+	position: relative;
+}
+/**************************浠ヤ笅闅愯棌鍙充晶涓汉淇℃伅鏍�***************************/
+.hiddenPersonInformation{
+	position: absolute;
+	top: 70px;
+	left: -50px;
+	width: 102px;
+}
+.hiddenPersonInformation a{
+	display: block;
+	text-align: center;
+	width: 100%;
+	line-height: 25px;
+	background-color: #7490CD;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+.hiddenPersonInformation ul li:first-child{
+	border-bottom: #fff solid 1px;
+}
+.hiddenPersonInformation ul li:last-child{
+	border-top: #fff solid 1px;
+}
+.hiddenPersonInformation ul li:first-child a{
+	line-height: 32px;
+}
+.hiddenPersonInformation ul li:last-child a{
+	line-height: 32px;
+}
+.hiddenPersonInformation a:hover{
+	background-color: #506CAD;
+}
+.hiddenPersonInformation{
+	display: none;
+	z-index: 99;
+}
+
+/**********************鍔犲埌灞辫****************************/
+.daoshanjiao{
+	display: inline-block;
+	margin: 0 0 3px 6px;
+	width: 0;
+	height: 0;
+	border-width: 3px;
+	border-color: white transparent transparent transparent;
+	border-style: solid;
+}
+.daoshanjiaoLast{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 3px;
+	border-color: white transparent transparent transparent;
+	border-style: solid;
+	position: absolute;
+	left: 52px;
+	top: 40px;
+}
+.topMenu_right_PersonInformation{
+	padding-right: 12px;
+}
+body{
+	overflow-y:scroll;
+}
+.hiddenPersonInformation{
+	left: -39px;
+}
+
+i.mesNum{
+	position: absolute;
+	display: block;
+	top: 23px;
+	left: 28px;
+	background:  #ff161b;
+	width: 13px;
+	height: 10px;
+	line-height: 10px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 6px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.lyc_foot_botton{
+				background-color:#2a3948;
+				width:100%;
+				height:42px;
+				text-align:center;
+				font-size:14px;
+				color:#61739b;
+				line-height:50px;
+				margin-top:-5px;
+				display: inline-block;		
+			}
+.school
+{
+	width:10%;
+}

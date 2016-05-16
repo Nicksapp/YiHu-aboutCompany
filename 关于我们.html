@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style/daohanglan.css">
+<link rel="stylesheet" href="style/about_us.css">
+<script type="text/javascript" src="/yihu/mdresource/js/login_top.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/about_us.js"></script>
+<body>
+
+<!--   顶部导航栏 -->
+<div class="topMenu">
+	<span>易乎校园</span>
+	<ul>
+		<li><a href="/yihu/Home">首页</a></li>
+		<li class="topMenu_left_zhidao">
+			<a href="/yihu/Question">知道<i class="daoshanjiao"></i></a>
+			<div class="hiddenZhidao">
+				<ul>
+					<li><a href="/yihu/Question/Index/topicShow/tid/1">新生必备</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/2">学霸修炼</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/3">情感专场</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/4">美食达人</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/5">旅游指南</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/6">赛事活动</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/7">考研集锦</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/8">毕业须知</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/9">出国手册</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/10">学科专业</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/11">工作实习</a></li>
+					<li><a href="/yihu/Question/Index/topicShow/tid/12">技术达人</a></li>
+				</ul>	
+			</div>	
+		</li>
+		<li class="topMenu_left_baike">
+			<a href="/yihu/Wiki">百科<i class="daoshanjiao"></i></a></a>
+			<div class="hiddenBaike">
+				<ul>
+					<li><a href="/yihu/Wiki/Index/topicShow/tid/1">校园介绍</a></li>
+					<li><a href="/yihu/Wiki/Index/topicShow/tid/2">院系专业</a></li>
+					<li><a href="/yihu/Wiki/Index/topicShow/tid/3">教师名片</a></li>
+					<li><a href="/yihu/Wiki/Index/topicShow/tid/4">知名校友</a></li>
+					<li><a href="/yihu/Wiki/Index/topicShow/tid/5">比赛竞赛</a></li>
+					<li><a href="/yihu/Wiki/Index/topicShow/tid/6">宿舍建筑</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="#">活动</a></li>
+		<li><a href="#">文库</a></li>
+		<li><a href="#">发现</a></li>
+		<li class="schoolwrap">
+			<a class="school" href="#">西安电子科技大学<i class="daoshanjiao"></i></a>
+			<div class="hiddenSchool">
+				
+				<a style="padding-top:10px;height:35px;text-align:center;display:inline-block;width:97%;" href="/yihu/Person/Index/showhtmlcs">切换到其他学校</a>
+				
+			</div>
+		</li>
+	</ul>	
+	<div class="topMenu_right">
+		<ul>
+			<li class="topMenu_right_search">
+				<a href="javascript:;" class="search">
+					<img src="img/search.png" width="25px" height="25px">
+				</a>
+			</li>
+			<li><a href="/yihu/Person/Index/#1" class="xiaoxi"><img class="message" src="img/xiaoxi.png" width="25px" height="25px"></a></li>
+			<li class="topMenu_right_PersonInformation">
+				<a href="javascript:;" class="person"><img src="img/thumbyihu_logo.png" width="40px" height="40px"><i class="daoshanjiaoLast"></i></a>
+				<div class="hiddenPersonInformation">
+					<ul id="top" state="45">
+						<li fid="omenu"><a href="javascript:;" id="45">chang22</a></li>
+						<li fid="omenu"><a href="/yihu/Person/Index">基本资料</a></li>
+						<li fid="omenu"><a href="/yihu/Person/Index/#1">我的消息</a></li>
+						<li fid="omenu"><a href="/yihu/Person/Index/#2">我的收藏</a></li>
+						<li fid="omenu"><a href="/yihu/Person/Index/#3">我的发布</a></li>
+						<li fid="omenu"><a href="/yihu/Person/Index/#4">我要发布</a></li>
+						<li fid="omenu"><a href="/yihu/Person/Index/#5">积分中心</a></li>
+						<li fid="omenu"><a onclick="return consult()" href="/yihu/Person/Index/showlogin">退出登录</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="hiddenSearch">
+	<a href="#"><span class="hiddenSearch_name">百科</span><span class="hiddenSearch_shangjiaoxing"></span>
+		<ul class="hiddenSearch_list">
+			<li id="知道" class="question">知道</li>
+			<li id="百科" class="wiki">百科</li>
+		</ul>
+	</a>
+	<input type="txet" name="searchText" id="searchText" placeholder="输入关键字，回车一下">
+	<img class="engine" src="/yihu/mdresource/img/searchMini.png">
+</div>
+<!--   顶部导航栏 -->
+
+<div class="my-main-container">
+<!--  左下侧导航栏 -->
+	<div class="left-nav-container" id="left-nav-container">
+		<div class="left-nav">
+			<ul class="left-text ">
+				<li class="left-active">
+					<a href="#">关于我们</a>
+				</li>
+				<li >
+					<a href="#">投稿须知</a>
+				</li>
+				<li >
+					<a href="#">商务合作</a>
+				</li>
+				<li >
+					<a href="#">免责声明</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--  左下侧导航栏 -->
+
+	<!-- 主体正文 -->
+	<div class="about-us-container" id="about-us-container">
+		<section id="toggle-aboutus-text" style="display: block;">
+			<div class="about-us-head">
+				<p>关于我们</p>
+				<hr>
+			</div>
+			<div class="about-us-body">
+				<h1>关于公司</h1>
+				<p>西安易乎网络科技有限公司，是一家以互联网区域化为核心的信息服务企业。<br>
+				<span class="circle"></span>公司的理念是：做最好的自己，You Are The Best！<br>
+				<span class="circle"></span>公司的宗旨：为人民服务。目前，开发的产品——易乎校园，是一个以大学为目标市场，基于自媒体和信息网络平台的校园信息互动平台。<br>
+				<span class="circle"></span>2015年8月开始研发易乎校园1.0，预计2016年4月正式上线。1.0版本包涵的内容：校园知道、校园百科，均采用互动的方式，用户自主提问和回答，发布词条，管理员负责整理有用信息。2.0版本，将加入校园通知、校园活动板块。3.0版本，将加入校园题库板块。
+				</p>
+				<div class="circle" style="margin-top: 65px;"></div><p class="bottom-text">吉祥物：易宝，外星人，年龄不详，来自易星球，性格开朗活泼，乐于助人，掌握易星球先进科技，致力于用科技改变未来。</p>
+				<img src="img/yihu_cutoon.png" alt="" class="bottom-img">
+			</div>
+		</section>
+		<section id="toggle-post-text" style="display: none;" >
+			<div class="about-us-head">
+				<p>投稿须知</p>
+				<hr>
+			</div>
+			<div class="about-us-body">
+				<h1>易乎校园百科发布须知</h1>
+				<h2>一、创建词条</h2>
+				<p>校园百科没有收录您想查阅的词条，希望创建这个词条。
+				当您开始做这件事情之前，请首先确认以下几个问题：
+				<br>
+				1. 你想创建的是某个大学，还是某个大学特有的事物？<br>
+				2.  您希望创建的词条是否是具有一定关注度？<br> 
+				创建词条时，请使用该内容的通用全称（如“西安电子科技大学”不要写“西电”），不要使用中文或英文以外的语言作为词条名。
+				创建一个词条时，词条至少应该包含一些必要的内容，以保证这个词条是完整的，读者阅读词条后可以了解到关于本词条的最重要的那些内容。
+				</p>
+				
+				<h2>二、更正词条</h2>
+				<p>如果您在校园百科中读到了错误的内容，希望更正。
+				在您开始做这件事情之前，请先确认以下几个问题：<br>
+				1. 这些内容确实是错误的吗？<br>
+				2. 您希望更正进百科的内容是客观真实的吗？<br>
+	 			3. 您是否能寻找到可查证的依据证明以上两点？
+				</p>
+				<h2>三、完善词条</h2>
+				<p>如果您认为校园百科中词条的内容不够完善，希望整理或补充它。
+				当您开始做这件事情之前，请首先确认以下几个问题：<br>
+				1. 您希望添加的内容是不是客观真实的？ <br>
+				2. 您希望添加的内容是否不包含任何个人观点，或者未被广泛认可的自创内容？<br>
+				3. 您希望添加的内容是否不包含任何宣传性内容，如网址、电话号码或任何联系方式，以及明显的广告宣传性质的文字？
+				</p>
+				<h1>注意:</h1>
+					<h2>1.避免无意义修改</h2>
+					<p>校园百科欢迎所有有兴趣的网友参与编辑，也希望您的每一次编辑，都能有效提升内容质量。
+					请您核实，您提交的内容是否有下列情况：<br>
+					1、您的提交版本与上一版本并无变化（可能是操作失误而造成错误提交）。<br>
+					2、您提交的版本与上一版本相比，对内容质量并未有显著提升。<br>
+					3、您可能添加了无意义的内链。
+					若以上内容仍无法回答您所遇到的问题，请前往易乎校园反馈群进行反馈。</p>
+					<h2>2.避免信息重复</h2>
+					<p>重复的信息，会干扰读者阅读理解词条。同一个信息点，用不同的文字描述，也会被算作重复信息。<br>
+					【建议】如何避免信息重复？<br>
+					1、在编辑词条前，先仔细阅读全文。<br>
+					2、放弃添加词条中已有的信息点。避免用不同的文字描述同一个信息点。<br>
+					3、把内容添加在相应的目录下或段落中，进行必要的整合。例如，大熊猫词条已经存在“栖息地”目录，请将您要补充的栖息地信息添加到该目录下，而不是新增一个目录。<br>
+					常见错误：<br>概述与正文内容重复，基本信息栏与正文内容重复
+					若以上内容仍无法回答您所遇到的问题，请前往易乎校园反馈群进行反馈。
+					</p>
+				<h1>校园知道鼓励大家客观、简洁、清晰、规范地提出问题</h1>
+				<h2>提问时需要注意：</h2>
+				<p>1.构成提问语句<br> 
+					提问内容清晰简洁，语句通顺，无明显错误；用简洁的文字提炼问题，不赘述；有针对性的提问，不寻求模糊空洞答案。 <br>
+					2.表述清晰<br> 
+					问题题目应包含足够的信息量，已确保可以获得有意义的答案；问题需容易理解，明确如何的答案可满足提问的期望。<br>
+					3.书写规范<br> 
+					句式、用词、标点符号严谨规范。问题尽量不含有与问题本身无关的词语（例如：跪求大神，请问各位）、 不规范的网络用语（例如：肿么办，为神马）、以及不规范的标点使用。<br>
+					4.选择准确的问题分类<br> 
+					为问题选择合适的分类，有利于其他用户看到你的问题，增加被回答的机率。 
+				</p>
+				<h2>对违反相应规范的用户根据严重程度给予警告、降级、封禁等处罚</h2>
+				<p>
+					1.涉及民族、种族、宗教信仰、性取向、性别、文化、阶层、职业、年龄等含有歧视、误导等的内容<br>
+
+					2.表达或激发仇恨的言论
+					<br>
+					3.广告类的内容
+					<br>
+					4.出于商业利益关系而发布的推广内容，即提问内容中带有推广和宣传性质的推荐某产品内容，表现形式一般是有广告网址、电话、QQ号码、email、广告产品名称，以及文字形式的广告产品描述
+					<br>5.散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的内容
+					<br>6.其他违反相关法律法规的内容
+				</p>
+				<div class="circle" style="margin-top: 65px;"></div><p class="bottom-text">吉祥物：易宝，外星人，年龄不详，来自易星球，性格开朗活泼，乐于助人，掌握易星球先进科技，致力于用科技改变未来。</p>
+				<img src="img/yihu_cutoon.png" alt="" class="bottom-img">
+			</div>
+		</section>
+		<section id="toggle-ecomney-text" style="display: none;">
+			<div class="about-us-head" >
+				<p>商务合作</p>
+				<hr>
+			</div>
+			<div class="about-us-body">
+				<h1>商务合作</h1>
+				<p>
+					如果您有广告投放计划，或详细的商务合作方案，可以通过以下方式联系我们。<br>
+					邮箱: collaesy@126.com <br>
+					微信号: wodememgxiang251
+				</p>
+
+
+
+				<div class="circle" style="margin-top: 65px;"></div><p class="bottom-text">吉祥物：易宝，外星人，年龄不详，来自易星球，性格开朗活泼，乐于助人，掌握易星球先进科技，致力于用科技改变未来。</p>
+				<img src="img/yihu_cutoon.png" alt="" class="bottom-img">
+			</div>
+		</section>
+		<section id="toggle-statement-text" style="display: none;" >
+			<div class="about-us-head">
+				<p>免责声明</p>
+				<hr>
+			</div>
+			<div class="about-us-body">
+				<h1>免责声明</h1>
+				<p>
+					1、本网站属于个人的非赢利性网站，转载的文章遵循原作者的版权声明，如果原文没有版权声明，按照目前互联网开放的原则，我们将在不通知作者的情况下，转载文章；如果原文明确注明“禁止转载”，我们一定不会转载。如果我们转载的文章不符合作者的版权声明或者作者不想让我们转载您的文章的话，请来信告知：colleasy@126.com <br>
+					2、本网站转载文章仅为传播更多信息之目的，但不保证信息的正确性和完整性，且不对因信息的不正确或遗漏导致的任何损失或损害承担责任。<br>
+					3、本网站所刊发、转载的文章，其版权均归原作者所有，如其他媒体、网站或个人从本网下载使用，请在转载有关文章时务必尊重该文章的著作权，保留本网注明的“稿件来源”，并自负版权等法律责任。
+				</p>
+
+
+				<div class="circle" style="margin-top: 65px;"></div><p class="bottom-text">吉祥物：易宝，外星人，年龄不详，来自易星球，性格开朗活泼，乐于助人，掌握易星球先进科技，致力于用科技改变未来。</p>
+				<img src="img/yihu_cutoon.png" alt="" class="bottom-img">
+			</div>
+		</section>
+	</div>
+</div>
+
+<!-- 主体正文 -->
+<script>
+ var allwidth=window.screen.width;
+   	   var topwidth=$('div.topMenu').width();
+   	   var topliwidth=topwidth*0.0553;
+   	   $('.topMenu > ul > li > a').css('width',topliwidth+'px');
+   	   $('a.school').css('width',(3*topliwidth)+'px');
+
+    	/*退出警告、顶栏渲染*/
+    	function consult()
+   	   {
+   	   	if(confirm("确定要退出当前账号？")){
+   	   		$.cookie('yihuusername','',-1);
+   	   		$.cookie('yihupassword','',-1);
+   	   		return true;
+   	   	}
+   	   	else
+   	   		return false;
+   	   }
+    var state=$('ul#top').attr('state');
+    if(state==0)
+    {
+    	var li='<li><a href="/yihu/Person/Index/showlogin">登录</a></li>';
+    	var li=li+'<li><a href="/yihu/Person/Index/showRegister">注册</a></li>';
+    	$('li[fid="omenu"]').remove();
+    	$('ul#top').append(li);
+    }
+    $('a.xiaoxi').on('click',function()
+    	{
+    		$('i.mesNum').remove();
+    		$('img.message').attr('src','/yihu/mdresource/img/xiaoxi1.jpg');
+    	})
+</script>
+
+</body>
+</html>
